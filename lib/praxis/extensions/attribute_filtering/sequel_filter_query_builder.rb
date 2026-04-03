@@ -35,7 +35,6 @@ module Praxis
       # By default we'll simply use the incoming op and value, and will map
       # the attribute based on what's on the `filters_map` definition
       def generate(filters)
-        raise "Not refactored yet!"
         seen_associations = Set.new
         filters.each do |(attr, spec)|
           column_name = _mapped_filter(attr)
